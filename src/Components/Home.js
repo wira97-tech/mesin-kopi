@@ -13,14 +13,14 @@ const Home = () => {
           <img src={BannerBackground} alt="" />
         </div>
         <div className="home-text-section">
-          <h1 className="primary-heading">Service Mesin Kopi 24 Jam</h1>
+          <h1 className="primary-heading">Service Mesin Kopi Terpercaya dan Terampil</h1>
           <p className="primary-text">
             <span>Melayani Area Bali dan sekitarnya.</span>
           </p>
-          <p className="primary-text">
+          {/* <p className="primary-text">
             <span>Kami hadir 24 Jam dalam 7 Hari</span>
-          </p>
-          <h1 className="primary-heading">2 Bulan Garansi Service</h1>
+          </p> */}
+          <h1 className="primary-heading">1 Bulan Garansi Service</h1>
           <p className="primary-text">
             <span>Garansi yang kami berikan adalah garansi service. dimana jikapun garansi habis anda tetap bisa untuk konsultasi gratis dengan kami.</span>
           </p>
