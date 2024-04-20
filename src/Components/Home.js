@@ -1,8 +1,8 @@
-import React from "react";
-import BannerBackground from "../Assets/home-banner-background.png";
-import BannerImage from "../Assets/home-banner-image.png";
-import Navbar from "./Navbar";
-import { FiArrowRight } from "react-icons/fi";
+import React from "react"
+import BannerBackground from "../Assets/home-banner-background.png"
+import BannerImage from "../Assets/d.png"
+import Navbar from "./Navbar"
+import { FiArrowRight } from "react-icons/fi"
 
 const Home = () => {
   return (
@@ -13,15 +13,27 @@ const Home = () => {
           <img src={BannerBackground} alt="" />
         </div>
         <div className="home-text-section">
-          <h1 className="primary-heading">
-            Your Favourite Food Delivered Hot & Fresh
-          </h1>
+          <h1 className="primary-heading">Service Mesin Kopi 24 Jam</h1>
           <p className="primary-text">
-            Healthy switcher chefs do all the prep work, like peeding, chopping
-            & marinating, so you can cook a fresh food.
+            <span>Melayani Area Bali dan sekitarnya.</span>
           </p>
+          <p className="primary-text">
+            <span>Kami hadir 24 Jam dalam 7 Hari</span>
+          </p>
+          <h1 className="primary-heading">2 Bulan Garansi Service</h1>
+          <p className="primary-text">
+            <span>Garansi yang kami berikan adalah garansi service. dimana jikapun garansi habis anda tetap bisa untuk konsultasi gratis dengan kami.</span>
+          </p>
+
           <button className="secondary-button">
-            Order Now <FiArrowRight />{" "}
+            <a
+              href="https://wa.me/6287760053038"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
+              Hubungi Kami
+            </a>
           </button>
         </div>
         <div className="home-image-section">
@@ -29,7 +41,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
