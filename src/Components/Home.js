@@ -6,6 +6,13 @@ import Navbar from "./Navbar"
 import { FiArrowRight } from "react-icons/fi"
 
 const Home = () => {
+  // Fungsi untuk membuat tautan WhatsApp dengan pesan tertentu
+  const createWhatsAppLink = () => {
+    const phoneNumber = "6287760053038"; // Ganti dengan nomor WhatsApp yang diinginkan
+    const message = "Halo, saya tertarik dengan layanan Anda. Bisakah Anda memberikan informasi lebih lanjut?"; // Pesan yang ingin dikirim
+    return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  };
+
   return (
     <div className="home-container">
       <Navbar />
@@ -31,16 +38,15 @@ const Home = () => {
             </span>
           </p>
 
-          <button className="secondary-button">
-            <a
-              href="https://wa.me/6287760053038"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: "none" }}
-            >
-              Hubungi Kami
-            </a>
-          </button>
+          {/* Tombol WhatsApp dengan format pesan */}
+          <a
+            href={createWhatsAppLink()}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <button className="secondary-button">Hubungi Kami</button>
+          </a>
         </div>
         <div style={{ display: "grid", gridTemplateRows: "auto auto" }}>
           <div className="home-image-section">
