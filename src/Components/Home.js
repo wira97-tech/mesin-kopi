@@ -45,7 +45,7 @@ const Home = () => {
             rel="noopener noreferrer"
             style={{ textDecoration: "none" }}
           >
-            <button className="secondary-button">Hubungi Kami</button>
+            <button className="secondary-button">Whatsapp</button>
           </a>
         </div>
         <div style={{ display: "grid", gridTemplateRows: "auto auto" }}>
